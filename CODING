@@ -383,71 +383,171 @@ import java.util.Scanner;
 
 public class Laptop {
 
-public static void main(String[] args) {
-// TODO Auto-generated method stub
-Scanner scan=new Scanner(System.in);
-System.out.println("Welcome to the Depreciation System!! ");
-//useful life of laptop
-int groupA =3;
-int groupB =4;
-int groupC =5;
-//purchase cost of laptop 
-int costA =5500;
-int costB =4000;
-int costC =3500;
-//residual value
-int bookA =2500;
-int bookB =1500;
-int bookC =1000;
-//price of new laptop
-int costNew =5000;
-//interest
-double interest = 0.05;
-//scanner input Group A
-System.out.println("\nEnter the amount of laptop from Group A: ");
-int amountA = scan.nextInt();
-int adeA = ((costA - bookA)/groupA) * amountA;//formula for annual depreciation expense (Group A)
-System.out.println("The Annual Depreciation Expenses for Group A: RM" + adeA);
-int AdA = adeA * groupA;//formula for accumulated depreciation (Group A)
-System.out.println("The Accumulated Depreciation for Group A: RM" + AdA);
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan=new Scanner(System.in);
+		
+		System.out.println("*****==WELCOME TO THE DEPRECIATION SYSTEM!!==*******");
+		System.out.println();
+		
+		//useful life of laptop
+		int groupA =3;
+		int groupB =4;
+		int groupC =5;
+		
+		//purchase cost of laptop 
+		int costA =5500;
+		int costB =4000;
+		int costC =3500;
+		
+		//residual value
+		int bookA =2500;
+		int bookB =1500;
+		int bookC =1000;
+		
+		//price of new laptop
+		int costNew =5000;
+		
+		//interest
+		double interest = 0.05;
+		
+		System.out.println("————————————————————————————————————————————————————————————————————————————");
+		System.out.println("----------------------------------GROUP A-----------------------------------");
+		System.out.println("————————————————————————————————————————————————————————————————————————————");
+		
+		//scanner input Group A
+		System.out.println("\nEnter the amount of laptop from Group A: ");
+		int amountA = scan.nextInt();
 
-//scanner input Group B
-System.out.println("\nEnter the amount of laptop from Group B: ");
-int amountB = scan.nextInt();
-int adeB = ((costB - bookB)/groupB) * amountB;//formula for annual depreciation expense (Group B)
-System.out.println("The Annual Depreciation Expenses for Group B: RM" + adeB);
-int AdB = adeB * groupB;//formula for accumulated depreciation (Group B)
-System.out.println("The Accumulated Depreciation for Group B: RM" + AdB);
-//scanner input Group C
-System.out.println("\nEnter the amount of laptop from Group C: ");
-int amountC = scan.nextInt();
-int adeC = ((costC - bookC)/groupC) * amountC;//formula for annual depreciation expense (Group C)
-System.out.println("The Annual Depreciation Expenses for Group C: RM" + adeC);
-int AdC = adeC * groupC;//formula for accumulated depreciation (Group C)
-System.out.println("The Accumulated Depreciation for Group C: RM" + AdC);
-int totalAd = AdA + AdB + AdC;//Total accumulated depreciation
-System.out.println("\nTotal Accumulated Depreciation of all groups: RM" + totalAd);
-int x = (costA * amountA) + (costB * amountB) + (costC * amountC);//Total cost of old laptops
-System.out.println("Total cost of old laptops: RM" + x);
-int y = (bookA * amountA) + (bookB * amountB )+ (bookC * amountC );//worth of old laptops
-System.out.println("The total book value: " + y);
-int z = amountA + amountB + amountC;
-System.out.println("The number of old laptop traded in: " + z);
-//scanner input new laptop
-System.out.println("\nThe number of new laptop sold: ");
-int n = scan.nextInt();
-int p = costNew * n;//formula to calculate the total price of all new laptops
-System.out.println("\nThe total price of new laptops: RM" +p);
-// money receive
-int m = p - (x -  totalAd);//formula for the money will receive
-System.out.println("The total money will receive: RM" + m);
-double i = (interest * m)/12; //formula for interest per month
-System.out.printf("Interest per month: RM %.2f",i);
-System.out.println();
-double e = ( (m/5) /12) +i;// Formula for money will receive with interest per month
-System.out.printf("Money receive with interest per month: RM%.2f" ,e);
-scan.close(); 
-}
+		String ringgit = "RM";
+		System.out.printf("\nDETAILS%30s",ringgit);
+		
+		//formula for annual depreciation expense (Group A)
+		int adeA = ((costA - bookA)/groupA) * amountA;
+		System.out.printf("\nAnnual Depreciation Expenses :%10d",adeA);
+		
+		//formula for accumulated depreciation (Group A)
+		int AdA = adeA * groupA;
+		System.out.printf("\nAccumulated Depreciation     :%10d\n",AdA);
+
+		
+		System.out.println("\n————————————————————————————————————————————————————————————————————————————");
+		System.out.println("----------------------------------GROUP B-----------------------------------");
+		System.out.println("————————————————————————————————————————————————————————————————————————————");
+		
+		//scanner input Group B
+		System.out.println("\nEnter the amount of laptop from Group B: ");
+		int amountB = scan.nextInt();
+		
+		System.out.printf("\nDETAILS%30s",ringgit);
+		
+		//formula for annual depreciation expense (Group B)
+		int adeB = ((costB - bookB)/groupB) * amountB;
+		System.out.printf("\nAnnual Depreciation Expenses :%10d",adeB);
+		
+		//formula for accumulated depreciation (Group B)
+		int AdB = adeB * groupB;
+		System.out.printf("\nAccumulated Depreciation     :%10d\n",AdB);
+		
+		System.out.println("\n————————————————————————————————————————————————————————————————————————————");
+		System.out.println("----------------------------------GROUP C-----------------------------------");
+		System.out.println("————————————————————————————————————————————————————————————————————————————");
+		
+		//scanner input Group C
+		System.out.println("\nEnter the amount of laptop from Group C: ");
+		int amountC = scan.nextInt();
+		
+		System.out.printf("\nDETAILS%30s",ringgit);
+		
+		//formula for annual depreciation expense (Group C)
+		int adeC = ((costC - bookC)/groupC) * amountC;
+		System.out.printf("\nAnnual Depreciation Expenses :%10d",adeB);
+		
+		//formula for accumulated depreciation (Group C)
+		int AdC = adeC * groupC;
+		System.out.printf("\nAccumulated Depreciation     :%10d\n",AdB);
+		
+		System.out.println("\n————————————————————————————————————————————————————————————————————————————");
+		System.out.println("----------------------TOTAL ACCUMULATED DEPRECIATION------------------------");
+		System.out.println("————————————————————————————————————————————————————————————————————————————");
+		
+		System.out.printf("\nDETAILS%30s",ringgit);
+		
+		//Total accumulated depreciation
+		int totalAd = AdA + AdB + AdC;
+		System.out.printf("\nGROUP A : %30d", AdA);
+		System.out.printf("\nGROUP B : %30d", AdB);
+		System.out.printf("\nGROUP C : %30d", AdC);
+		System.out.printf("\nTOTAL   : %31d\n", totalAd);
+		
+		System.out.println("\n————————————————————————————————————————————————————————————————————————————");
+		System.out.println("------------------------TOTAL COST OF OLD LAPTOPS---------------------------");
+		System.out.println("————————————————————————————————————————————————————————————————————————————");
+		
+		System.out.printf("\nDETAILS%30s",ringgit);
+		
+		//Formula for total cost of old laptops
+		int x = (costA * amountA) + (costB * amountB) + (costC * amountC);
+		System.out.printf("\nGROUP A : %30d", costA * amountA);
+		System.out.printf("\nGROUP B : %30d", costB * amountB);
+		System.out.printf("\nGROUP C : %31d", costC * amountC);
+		System.out.printf("\nTOTAL   : %31d\n", x);
+		
+		System.out.println("\n————————————————————————————————————————————————————————————————————————————");
+		System.out.println("--------------------------TOTAL RESIDUAL VALUE------------------------------");
+		System.out.println("————————————————————————————————————————————————————————————————————————————");
+		
+		System.out.printf("\nDETAILS%30s",ringgit);
+		
+		//worth of old laptops
+		int y = (bookA * amountA) + (bookB * amountB )+ (bookC * amountC );
+		System.out.printf("\nGROUP A : %30d", bookA * amountA);
+		System.out.printf("\nGROUP B : %30d", bookB * amountB);
+		System.out.printf("\nGROUP C : %30d", bookC * amountC);
+		System.out.printf("\nTOTAL   : %30d\n", y);
+		
+		System.out.println("\n————————————————————————————————————————————————————————————————————————————");
+		System.out.println("--------------------TOTAL NUMBER OF OLD LAPTOP TRADED IN--------------------");
+		System.out.println("————————————————————————————————————————————————————————————————————————————");
+		
+		String num = "AMOUNT";
+		System.out.printf("\nDETAILS%34s",num);
+		
+		//formula for total number of old laptops received
+		int z = amountA + amountB + amountC;
+		System.out.printf("\nGROUP A : %27d", amountA);
+		System.out.printf("\nGROUP B : %27d", amountB);
+		System.out.printf("\nGROUP C : %27d", amountC);
+		System.out.printf("\nTOTAL   : %27d\n",     z);
+		
+		
+		//scanner input new laptop
+		System.out.println("————————————————————————————————————————————————————————————————————————————");
+		System.out.println("\nTHE NUMBER OF NEW LAPTOP SOLD: ");
+		int n = scan.nextInt();
+		
+		//formula to calculate the total price of all new laptops
+		int p = costNew * n;
+		System.out.println("TOTAL PRICE OF NEW LAPTOPS: RM" + p);
+		
+		System.out.println("\n————————————————————————————————————————————————————————————————————————————");
+		System.out.println("-------------------------------MONEY RECEIVED-------------------------------");
+		System.out.println("————————————————————————————————————————————————————————————————————————————");
+		
+		// money receive
+		int m = p - (x -  totalAd);//formula for the money will receive
+		System.out.println("TOTAL MONEY WILL RECEIVE              : RM" +m);
+		
+		double i = (interest * m)/12; //formula for interest per month
+		System.out.printf("INTEREST PER MONTH                    : RM%.2f",i);
+		System.out.println();
+		
+		double e = ( (m/5) /12) +i;// Formula for money will receive with interest per month
+		System.out.printf("MONEY RECEIVE WITH INTEREST PER MONTH : RM%.2f\n" ,e);
+		
+		System.out.println("\n*******==THANK YOU FOR USING THIS SYSTEM!!==********");
+		scan.close(); 
+		}
 
 }
 
