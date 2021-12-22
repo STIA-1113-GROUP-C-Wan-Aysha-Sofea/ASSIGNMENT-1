@@ -156,36 +156,94 @@ The amount you should pay every month is : RM 32295.50
 
 3. LAPTOP
 
-Welcome to the Depreciation System!! 
+*****==WELCOME TO THE DEPRECIATION SYSTEM!!==*******
+
+————————————————————————————————————————————————————————————————————————————
+----------------------------------GROUP A-----------------------------------
+————————————————————————————————————————————————————————————————————————————
 
 Enter the amount of laptop from Group A: 
 10
-The Annual Depreciation Expenses for Group A: RM10000
-The Accumulated Depreciation for Group A: RM30000
+
+DETAILS                            RM
+Annual Depreciation Expenses :     10000
+Accumulated Depreciation     :     30000
+
+————————————————————————————————————————————————————————————————————————————
+----------------------------------GROUP B-----------------------------------
+————————————————————————————————————————————————————————————————————————————
 
 Enter the amount of laptop from Group B: 
 20
-The Annual Depreciation Expenses for Group B: RM12500
-The Accumulated Depreciation for Group B: RM50000
+
+DETAILS                            RM
+Annual Depreciation Expenses :     12500
+Accumulated Depreciation     :     50000
+
+————————————————————————————————————————————————————————————————————————————
+----------------------------------GROUP C-----------------------------------
+————————————————————————————————————————————————————————————————————————————
 
 Enter the amount of laptop from Group C: 
 30
-The Annual Depreciation Expenses for Group C: RM15000
-The Accumulated Depreciation for Group C: RM75000
 
-Total Accumulated Depreciation of all groups: RM155000
-Total cost of old laptops: RM240000
-The total book value: 85000
-The number of old laptop traded in: 60
+DETAILS                            RM
+Annual Depreciation Expenses :     12500
+Accumulated Depreciation     :     50000
 
-The number of new laptop sold: 
+————————————————————————————————————————————————————————————————————————————
+----------------------TOTAL ACCUMULATED DEPRECIATION------------------------
+————————————————————————————————————————————————————————————————————————————
+
+DETAILS                            RM
+GROUP A :                          30000
+GROUP B :                          50000
+GROUP C :                          75000
+TOTAL   :                          155000
+
+————————————————————————————————————————————————————————————————————————————
+------------------------TOTAL COST OF OLD LAPTOPS---------------------------
+————————————————————————————————————————————————————————————————————————————
+
+DETAILS                            RM
+GROUP A :                          55000
+GROUP B :                          80000
+GROUP C :                          105000
+TOTAL   :                          240000
+
+————————————————————————————————————————————————————————————————————————————
+--------------------------TOTAL RESIDUAL VALUE------------------------------
+————————————————————————————————————————————————————————————————————————————
+
+DETAILS                            RM
+GROUP A :                          25000
+GROUP B :                          30000
+GROUP C :                          30000
+TOTAL   :                          85000
+
+————————————————————————————————————————————————————————————————————————————
+--------------------TOTAL NUMBER OF OLD LAPTOP TRADED IN--------------------
+————————————————————————————————————————————————————————————————————————————
+
+DETAILS                            AMOUNT
+GROUP A :                          10
+GROUP B :                          20
+GROUP C :                          30
+TOTAL   :                          60
+————————————————————————————————————————————————————————————————————————————
+
+THE NUMBER OF NEW LAPTOP SOLD: 
 60
+TOTAL PRICE OF NEW LAPTOPS: RM300000
 
-The total price of new laptops: RM300000
-The total money will receive: RM215000
-Interest per month: RM 179.17
-Money receive with interest per month: RM3762.17
+————————————————————————————————————————————————————————————————————————————
+-------------------------------MONEY RECEIVED-------------------------------
+————————————————————————————————————————————————————————————————————————————
+TOTAL MONEY WILL RECEIVE              : RM215000
+INTEREST PER MONTH                    : RM895.83
+MONEY RECEIVE WITH INTEREST PER MONTH : RM4478.83
 
+******==THANK YOU FOR USING THIS SYSTEM!!==*******
 
 4. SATELLITE
 
